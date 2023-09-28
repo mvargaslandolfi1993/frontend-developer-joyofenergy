@@ -1,5 +1,5 @@
 import * as chartJs from 'chart.js'
-import IReading from '../../domain/readings/IReading'
+import IReading from '../../services/reading/IReading'
 
 let chart: chartJs.Chart<any, number[], string>;
 

@@ -1,4 +1,4 @@
-import { getReadings, groupByDay, sortByTime } from './reading'
+import { getReadings, groupByDay, sortBy } from '.'
 
 describe('#reading', function () {
   describe('#getReadings', () => {
@@ -93,7 +93,7 @@ describe('#reading', function () {
         },
       ]
 
-      const sortedReading = sortByTime(readings)
+      const sortedReading = sortBy(readings, 'time')
       expect(sortedReading).toHaveLength(4)
       expect(sortedReading[0]).toMatchObject({
         time: new Date(2021, 12, 15, 11, 34).getTime(),
@@ -118,7 +118,7 @@ describe('#reading', function () {
         },
       ]
 
-      sortByTime(readings)
+      sortBy(readings, 'time')
       expect(readings).toHaveLength(3)
       expect(readings).toEqual([
         { time: new Date(2021, 12, 17, 10, 24).getTime(), value: 50 },

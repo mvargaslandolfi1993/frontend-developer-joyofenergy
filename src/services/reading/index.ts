@@ -28,6 +28,6 @@ export const groupByDay = (readings: Array<IReading>): Array<IReading> => {
   }))
 }
 
-export const sortByTime = (readings: Array<IReading>) => {
-  return [...readings].sort((readingA, readingB) => readingA.time - readingB.time)
+export const sortBy = (readings: Array<IReading>, sortedBy: keyof IReading) => {
+  return [...readings].sort((readingA, readingB) => readingA[sortedBy] - readingB[sortedBy])
 }
