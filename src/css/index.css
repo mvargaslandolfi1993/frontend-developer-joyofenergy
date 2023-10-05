@@ -95,11 +95,15 @@ html {
   border: 1px solid rgb(225, 225, 225);
 }
 
-.card {
+.cards .card {
   background-color: #fff;
   border-radius: 0.5rem;
+  margin-right: 2rem;
 }
 
+.cards div:last-child .card {
+  margin-right: 0;
+}
 .w-full {
   display: inline-block;
   width: 100%;

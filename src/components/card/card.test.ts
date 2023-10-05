@@ -7,7 +7,7 @@ describe('#card renderCart', () => {
     let html = `
         <div class="card px2 py1 shadow-2">
             <h2>Cost</h2>
-            <span class="w-full">10</span>
+            <h4 class="w-full py1">10</h4>
             <span class="w-full">$</span>
         </div>
     `

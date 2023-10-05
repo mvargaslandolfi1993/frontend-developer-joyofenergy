@@ -35,10 +35,10 @@ if (card2) {
   card2.innerHTML += renderCart('Consumption', Math.round(consumption), 'kWh')
 }
 
-const card3 = document.getElementById('card-1')
+const card3 = document.getElementById('card-3')
 
 if (card3) {
-  card3.innerHTML += renderCart('Footprint', footprint, 'Footprint')
+  card3.innerHTML += renderCart('Footprint', footprint, 'Tonnes')
 }
 
 export const chart = renderChart(filteredReadings)
