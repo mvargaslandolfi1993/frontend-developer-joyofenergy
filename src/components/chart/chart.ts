@@ -1,7 +1,7 @@
 import * as chartJs from 'chart.js'
 import IReading from '../../services/reading/IReading'
 
-let chart: chartJs.Chart<any, number[], string>;
+let chart: chartJs.Chart<any, number[], string>
 
 export const formatDateLabel = (timestamp: number) => {
   const date = new Date(timestamp)
@@ -15,10 +15,9 @@ export const formatDateLabel = (timestamp: number) => {
   return `${formatPart(day)}/${formatPart(month + 1)}`
 }
 
-export const renderChart = (readings: Array<IReading>) => {
-  chartJs.Chart.defaults.font.size = 10;
-
-  (chartJs.Chart.register as (...args: chartJs.ChartComponentLike[]) => void).apply(
+export const renderChart = (readings: Array<IReading>): any => {
+  chartJs.Chart.defaults.font.size = 10
+  ;(chartJs.Chart.register as (...args: chartJs.ChartComponentLike[]) => void).apply(
     null,
     //@ts-ignore
     Object.values(chartJs).filter((chartClass) => chartClass.id),

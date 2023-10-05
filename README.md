@@ -35,3 +35,13 @@ $ npm test
 
 TypeScript support is out-of-box.
 You can create \*.ts files or import it into any of the existing files.
+
+As an electricity consumer I want to be able to view cost ($), energy consumption (kWh) and carbon footprint (tonnes) of the last 30 days so that I can monitor my energy usage.
+Acceptance Criteria:
+Given I am viewing my energy dashboard, for the data displayed in the main graph (last 30 days of energy readings):
+I can see the Cost 💰 in $ rounded to the nearest integer. Cost is $0.138 per 1 kWh.
+I can see the Consumption ⚡ in kWh rounded to the nearest integer. Consumption is the sum of all readings for the last 30 days.
+I can see the Footprint 👟 in tonnes to an accuracy of 4 decimal places. The Footprint is 0.0002532 tonnes per 1kWh.
+I can see the Cost 💰 in $ rounded to the nearest integer. Cost is $0.138 per 1 kWh.
+I can see the Consumption ⚡ in kWh rounded to the nearest integer. Consumption is the sum of all readings for the last 30 days.
+I can see the Footprint 👟 in tonnes to an accuracy of 4 decimal places. The Footprint is 0.0002532 tonnes per 1kWh.
