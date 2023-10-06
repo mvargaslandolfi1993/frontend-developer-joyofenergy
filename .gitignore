@@ -1,1 +1,9 @@
 node_modules
+dist
+build
+coverage
+.vscode
+.DS_STORE
+.env
+tmp
+.npmrc
